@@ -1,0 +1,284 @@
+:root {
+  --accent-color: #2196f3;
+  --titles-color: #212121;
+  --main-text-color: #757575;
+  --dark-bg-text: #ffffff;
+  --mail-tel-color: rgba(255, 255, 255, 0.6);
+  --logo-black-cl: #000000;
+
+  --dark-background: #2f303a;
+  --second-background: #f5f4fa;
+
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Утилиты */
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.head {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.head .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.head > nav,
+ul {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  color: var(--titles-color);
+  margin-right: auto;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.tel-mail {
+  display: flex;
+}
+
+.tel-mail li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address {
+  font-style: inherit;
+}
+
+.address > a {
+  color: var(--dark-bg-text);
+}
+
+.address li a {
+  color: var(--mail-tel-color);
+}
+
+.menu {
+  display: inline-flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.section {
+  margin-top: 95px;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
+}
+
+.item {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--dark-bg-text);
+  background-color: var(--accent-color);
+}
+
+.cursors {
+  cursor: pointer;
+}
+
+.logo {
+  margin-right: 95px;
+
+  color: var(--logo-black-cl);
+  font-family: var(--logo-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo > span {
+  color: var(--accent-color);
+}
+
+.nav > .logo {
+  text-decoration: none;
+}
+
+.dark-bg > .logo {
+  color: var(--dark-bg-text);
+}
+
+.hero {
+  max-width: 700px;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  text-align: center;
+}
+
+.main-page-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dark-bg-text);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--titles-color);
+}
+
+.features-title {
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--titles-color);
+}
+
+.name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--titles-color);
+}
+
+.name-item {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.dark-bg {
+  background-color: var(--dark-background);
+}
+
+.team {
+  background-color: var(--second-background);
+}
+
+.team h2 {
+  padding-top: 95px;
+}
+
+.worker {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  text-align: center;
+}
+
+/* Страница портфолио */
+
+.portfolio-btn {
+  letter-spacing: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--titles-color);
+  background: var(--second-background);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--dark-bg-text);
+  background-color: var(--accent-color);
+}
+
+.suggestion-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.center {
+  text-align: center;
+}
+
+.current-page {
+  color: var(--accent-color);
+}
