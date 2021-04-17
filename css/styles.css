@@ -80,8 +80,6 @@ p {
 }
 
 .head {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border: 1px solid #ececec;
 }
 
@@ -97,6 +95,11 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.head .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav {
@@ -160,9 +163,20 @@ ul {
   margin-top: 30px;
 }
 
+.features {
+}
+
 .features-item {
   width: 270px;
   flex-basis: calc((100% - 4 * 30px) / 4);
+}
+
+.features-title {
+  margin-bottom: 10px;
+
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--titles-color);
 }
 
 .button {
@@ -190,6 +204,8 @@ ul {
 }
 
 .logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-right: 95px;
 
   color: var(--logo-black-cl);
@@ -213,11 +229,11 @@ ul {
 
 .hero-page {
   height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin-right: auto;
   margin-left: auto;
   max-width: 700px;
@@ -225,6 +241,10 @@ ul {
 
 .hero > h1 + button {
   text-align: center;
+}
+
+.gallery {
+  padding-bottom: 95px;
 }
 
 .gallery-item {
@@ -253,12 +273,8 @@ ul {
   color: var(--titles-color);
 }
 
-.features-title {
-  margin-bottom: 10px;
-
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--titles-color);
+.name {
+  padding: 30px 60px;
 }
 
 .name-title {
@@ -266,11 +282,13 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   color: var(--titles-color);
+  margin-bottom: 10px;
 }
 
 .name-item {
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 0;
 }
 
 .dark-bg {
@@ -280,9 +298,10 @@ ul {
 .team {
   background-color: var(--second-background);
   padding-bottom: 95px;
+  padding-top: 0;
 }
 
-.team h2 {
+.team > .container {
   padding-top: 95px;
 }
 
@@ -307,15 +326,16 @@ ul {
   margin-right: auto;
 }
 
+.footer .logo {
+  color: var(--dark-bg-text);
+}
+
 /* Страница портфолио */
 
 .filter {
   display: flex;
   justify-content: center;
-}
-
-.filter-list .list {
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .filter-menu:not(:last-child) {
