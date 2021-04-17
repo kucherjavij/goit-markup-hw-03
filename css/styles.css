@@ -163,9 +163,6 @@ ul {
   margin-top: 30px;
 }
 
-.features {
-}
-
 .features-item {
   width: 270px;
   flex-basis: calc((100% - 4 * 30px) / 4);
