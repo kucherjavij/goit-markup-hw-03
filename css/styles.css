@@ -89,8 +89,7 @@ p {
   justify-content: flex-start;
 }
 
-.head > nav,
-ul {
+.head > .nav + .tel-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -161,6 +160,11 @@ ul {
 .item {
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.features {
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .features-item {
@@ -271,7 +275,7 @@ ul {
 }
 
 .name {
-  padding: 30px 60px;
+  padding: 30px;
 }
 
 .name-title {
@@ -295,7 +299,7 @@ ul {
 .team {
   background-color: var(--second-background);
   padding-bottom: 95px;
-  padding-top: 0;
+  padding-top: 95px;
 }
 
 .team > .container {
@@ -317,13 +321,10 @@ ul {
   padding-bottom: 60px;
 }
 
-.footer > a {
+.footer .logo {
   display: flex;
   margin-bottom: 20px;
   margin-right: auto;
-}
-
-.footer .logo {
   color: var(--dark-bg-text);
 }
 
@@ -376,7 +377,7 @@ ul {
 }
 
 .suggestion {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .suggestion-title {
