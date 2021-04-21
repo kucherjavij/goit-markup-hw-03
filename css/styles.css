@@ -89,16 +89,15 @@ p {
   justify-content: flex-start;
 }
 
-.head > .nav + .tel-mail {
+.head .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.head .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav {
@@ -245,6 +244,7 @@ p {
 }
 
 .gallery {
+  padding-top: 95px;
   padding-bottom: 95px;
 }
 
@@ -302,10 +302,6 @@ p {
   padding-top: 95px;
 }
 
-.team > .container {
-  padding-top: 95px;
-}
-
 .worker {
   flex-basis: calc((100% - 4 * 30px) / 4);
   text-align: center;
@@ -325,6 +321,7 @@ p {
   display: flex;
   margin-bottom: 20px;
   margin-right: auto;
+  padding: 0;
   color: var(--dark-bg-text);
 }
 
